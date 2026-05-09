@@ -1,0 +1,348 @@
+# Instincts generated from https://github.com/dyzmj/2025-blog-public
+# Generated: 2026-05-09T20:29:38.129Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: 2025-blog-public-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/dyzmj/2025-blog-public
+---
+
+# 2025 Blog Public Commit Length
+
+## Action
+
+Keep commit messages concise (~13 characters)
+
+## Evidence
+
+- Average commit message length: 13 chars
+- Based on 2 commits
+
+---
+id: 2025-blog-public-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/dyzmj/2025-blog-public
+---
+
+# 2025 Blog Public Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: 2025-blog-public-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/dyzmj/2025-blog-public
+---
+
+# 2025 Blog Public Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: 2025-blog-public-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/dyzmj/2025-blog-public
+---
+
+# 2025 Blog Public Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: 2025-blog-public-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/dyzmj/2025-blog-public
+---
+
+# 2025 Blog Public Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: 2025-blog-public-workflow-add-new-blog-post
+trigger: "when doing add new blog post"
+confidence: 0.55
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/dyzmj/2025-blog-public
+---
+
+# 2025 Blog Public Workflow Add New Blog Post
+
+## Action
+
+Follow the add-new-blog-post workflow:
+1. Add new entry to public/blogs/index.json
+2. Create new folder under public/blogs/{slug}/
+3. Add config.json for the new post
+4. Add index.md with the post content
+5. Add any image assets (e.g., .webp) to the post folder
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~1x per month
+- Files: public/blogs/index.json, public/blogs/{slug}/config.json, public/blogs/{slug}/index.md
+
+---
+id: 2025-blog-public-workflow-update-existing-blog-post
+trigger: "when doing update existing blog post"
+confidence: 0.55
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/dyzmj/2025-blog-public
+---
+
+# 2025 Blog Public Workflow Update Existing Blog Post
+
+## Action
+
+Follow the update-existing-blog-post workflow:
+1. Modify the index.md file for the relevant blog post in its folder
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~1x per month
+- Files: public/blogs/{slug}/index.md
+
+---
+id: 2025-blog-public-instinct-file-naming
+trigger: "When creating or renaming files in the repository"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: dyzmj/2025-blog-public
+---
+
+# 2025 Blog Public Instinct File Naming
+
+## Action
+
+Use camelCase for file names
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.files
+- No snake_case or kebab-case files detected
+
+---
+id: 2025-blog-public-instinct-function-naming
+trigger: "When defining functions in TypeScript files"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: dyzmj/2025-blog-public
+---
+
+# 2025 Blog Public Instinct Function Naming
+
+## Action
+
+Use camelCase for function names
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.functions
+
+---
+id: 2025-blog-public-instinct-class-naming
+trigger: "When defining classes in TypeScript files"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: dyzmj/2025-blog-public
+---
+
+# 2025 Blog Public Instinct Class Naming
+
+## Action
+
+Use PascalCase for class names
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.classes
+
+---
+id: 2025-blog-public-instinct-constant-naming
+trigger: "When defining constants in TypeScript files"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: dyzmj/2025-blog-public
+---
+
+# 2025 Blog Public Instinct Constant Naming
+
+## Action
+
+Use SCREAMING_SNAKE_CASE for constant names
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.constants
+
+---
+id: 2025-blog-public-instinct-import-style
+trigger: "When importing modules in TypeScript files"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: dyzmj/2025-blog-public
+---
+
+# 2025 Blog Public Instinct Import Style
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in codeStyle.importStyle
+
+---
+id: 2025-blog-public-instinct-export-style
+trigger: "When exporting modules or functions in TypeScript files"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: dyzmj/2025-blog-public
+---
+
+# 2025 Blog Public Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in codeStyle.exportStyle
+
+---
+id: 2025-blog-public-instinct-test-location
+trigger: "When adding or updating tests"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: dyzmj/2025-blog-public
+---
+
+# 2025 Blog Public Instinct Test Location
+
+## Action
+
+Place test files in a separate folder from source files
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation
+
+---
+id: 2025-blog-public-instinct-git-commit-format
+trigger: "When writing a commit message"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: dyzmj/2025-blog-public
+---
+
+# 2025 Blog Public Instinct Git Commit Format
+
+## Action
+
+Use a short, freeform message without a prefix, typically describing the action and target (e.g., 新增文章: yh-fish)
+
+## Evidence
+
+- Pattern in commits.examples
+- No standard prefixes detected
+
+---
+id: 2025-blog-public-instinct-add-new-blog-post
+trigger: "When someone wants to publish a new blog post"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: dyzmj/2025-blog-public
+---
+
+# 2025 Blog Public Instinct Add New Blog Post
+
+## Action
+
+Add a new entry to public/blogs/index.json, create a new folder under public/blogs/{slug}/, add config.json, add index.md, and add any image assets (.webp) to the post folder
+
+## Evidence
+
+- Workflow: add-new-blog-post
+- Example commit sequence in workflows
+
+---
+id: 2025-blog-public-instinct-update-existing-blog-post
+trigger: "When someone wants to edit or update a blog post's content"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: dyzmj/2025-blog-public
+---
+
+# 2025 Blog Public Instinct Update Existing Blog Post
+
+## Action
+
+Modify the index.md file for the relevant blog post in its folder
+
+## Evidence
+
+- Workflow: update-existing-blog-post
+- Example commit sequence in workflows
+
