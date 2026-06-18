@@ -1,0 +1,6 @@
+interface:
+  display_name: "2025 Blog Public"
+  short_description: "Repo-specific patterns and workflows for 2025-blog-public"
+  default_prompt: "Use the 2025-blog-public repo skill to follow existing architecture, testing, and workflow conventions."
+policy:
+  allow_implicit_invocation: true
